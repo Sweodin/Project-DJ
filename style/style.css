@@ -1,0 +1,61 @@
+html,
+body {
+  height: 100%;
+  font-family: "Jura", sans-serif;
+  color: #30cfd0;
+  background: linear-gradient(
+    105deg,
+    rgb(216, 242, 184) 0%,
+    rgb(139, 102, 241) 100%
+  );
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  color: #1028fa;
+}
+
+.nav-links {
+  display: flex;
+}
+
+/* .logo {
+  font-size: 10px;
+} */
+.logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 100px;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li {
+  padding: 5px 14px;
+  transition: background-color 0.3s ease;
+}
+
+.menu li:hover {
+  background-color: #d8f2b8;
+  border-radius: 5px;
+}
+
+/* .projectList {
+  position: relative;
+} */
