@@ -1,6 +1,6 @@
 # Project-DJ
 Website for DJ related stuff
-Hemsida för att boka en dj till event eller andra tillställningar
+Website for booking a DJ for events or other occasions.
 
 Your theme is: DJ
 Your main colos is: #d8f2b8 (this is a HEX code) 
