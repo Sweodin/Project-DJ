@@ -9,29 +9,68 @@
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/style.css">
     <title>Project DJ</title>
-  </head>
-  <body>
-    <nav class="navbar">
-      <!----LOGO---->
-      <div class="logo"><img src="img/DJ logo.png" alt="Pic of DJ" /></div>
+</head>
+<body>
+    <header>
+            <section class="header__top flex j__center a__center">
+                <p class="header__text">Book one of our DJ for your next event - 
+                    <a href="mailto:exampel@djservice.com" class="header__email">
+                        exampel@djservice.com
+                    </a> - 0731234567</p>
+            </section>
+            <nav class="navigation__bar flex j__flex-start a__center">
+                <section>
+                    <a href="#"><img src="image/dj-logo.png" class="logo" alt="logo"></a>
+                </section>
+                <section class="navigation__container flex j__center a__center">
+                        <a href="#" class="link">Home</a>
+                        <a href="#" class="link">About</a>
+                        <div class="dropdown pointer">
+                            <button class="dropbtn">Gallery 
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content none">
+                              <a href="#">Link 1</a>
+                              <a href="#">Link 2</a>
+                              <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <a href="#" class="link none responsive">Link 1</a>
+                        <a href="#" class="link none responsive">Link 2</a>
+                        <a href="#" class="link none responsive">Link 3</a>
+                        <a href="#" class="link">Contact</a>
+                        <section class="navigation__bar-btn">
+                            <button class="btn login">Login</button>
+                            <button class="btn join">Join Us</button>
+                        </section>
+                </section>
+                <section class="burger none">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </section>
+            </nav>
+    </header>
+        <section>
+        CONTENT
+        </section>
+        <footer class="flex j__center a__center">
+            <img src="image/dj-logo.png" class="logo w5rem" alt="logo">
+            <section class="m__auto flex col tc">
+                <a href="#" class="link p10">Home</a>
+                <a href="#" class="link p10">About</a>
+                <a href="#" class="link p10">Link 1</a>
+                <a href="#" class="link p10">Link 2</a>
+                <a href="#" class="link p10">Link 3</a>
+                <a href="#" class="link p10">Contact</a>
+            </section>
+            <section class="footer__icons flex j__center a__center">
+                <img src="image/facebook.png" class="icon p10" alt="facebook-icon">
+                <img src="image/instagram.png"class="icon p10" alt="instagram-icon">
+                <img src="image/x.png" class="icon p10" alt="github-icon">
+            </section>
+        </footer>
     
-      <!----NAVIGATION MENU---->
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#ourProducts">Our Product</a></li>
-        <li class="dropdown">
-          <button class="dropbtn">Gallery 
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">DJ</a>
-            <a href="#">Our Events</a>
-            <a href="#">Our People</a>
-          </div>
-        </li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <script src="script/script.js"></script>
 </body>
 </html>
