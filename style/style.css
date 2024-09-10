@@ -75,7 +75,8 @@ header{
   height: 5rem;
 }
 
-.logo{
+.logo,
+.footer__logo{
   width:3.5rem;
   border-radius: 50px;
   margin-left:2rem;
@@ -290,4 +291,27 @@ footer{
   .burger.toggle .line3 {
       transform: rotate(45deg) translate(-5px, -6px);
   }
+}
+
+/*RESPONSIVE FOOTER*/
+@media screen and (max-width: 1024px){
+  footer {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  footer .footer__icons {
+    margin-top: 15px;
+  }
+
+  footer .link {
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+
+  .footer__logo {
+    width: 5rem; 
+  }
+
+
 }
