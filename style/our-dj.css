@@ -19,8 +19,6 @@ h1{
     line-height: 2px;
 }
 
-
-
 h2{
     font-family: "Roboto", system-ui;
     font-weight: 800;
@@ -55,8 +53,16 @@ a{
     display:flex;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
 .j__center{
     justify-content: center;
+}
+
+.j__evenly{
+    justify-content: space-evenly;
 }
 
 .j__flex-start{
@@ -65,10 +71,6 @@ a{
 
 .a__center{
     align-items: center;
-}
-
-.wrap{
-    flex-wrap: wrap;
 }
 
 .col{
@@ -83,6 +85,10 @@ button,
 
 .mb20{
     margin-bottom: 20px;
+}
+
+.p20{
+    padding:20px;
 }
 
 header{
@@ -262,7 +268,6 @@ header{
 .gallery__info-container{
     margin: auto;
     background-color: #d8f2b8;
-
     box-shadow: 0 15px 20px #b8b6b6;
 
 }
@@ -295,6 +300,37 @@ header{
 
 .w400{
     width: 400px;
+}
+
+/*GALLERY PHOTO CONTAINER*/
+
+.gallery__photo-container{
+    background-color: rgba(216, 242, 184, 0.5);
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    gap: 20px;
+}
+
+.gallery__card{
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    border-radius: 4px;
+    cursor:pointer;
+    opacity: 0.8;
+}
+
+.gallery__card:hover{
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+.image{
+    width: 200px;
+    height: auto;
+    border-radius: 4px;
 }
 
 /*FOOTER*/
