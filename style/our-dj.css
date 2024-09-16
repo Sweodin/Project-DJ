@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: rgba(216, 242, 184, 0.4);
+    background-color:rgba(216, 242, 184, 0.2);
     padding-top: 85px;
 }
 
@@ -52,6 +52,14 @@ p{
 
 a{
     text-decoration: none;
+}
+
+.cit{
+    font-family: "Merriweather", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1px;
 }
 
 .none{
@@ -104,11 +112,11 @@ a,
 }
 
 .right{
-    right:-10%;
+    right:-30%;
 }
 
 .left{
-    left:-10%;
+    left:-30%;
 }
 
 .w700{
@@ -341,8 +349,27 @@ header{
     width: 100%;
     margin: auto;
     gap: 40px;
-
 }
+
+.photo-container {
+    position: relative;
+}
+
+.dj-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#3d4d22;
+    border-radius: 20px;
+    opacity:0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.photo-container:hover .dj-name{
+    opacity:1;
+}
+
 
 .image{
     width: 200px;
@@ -373,9 +400,41 @@ header{
 }
 
 .our__event-img{
-    max-width: 600px;
+    max-width: 400px;
     width: 100%;
     border-radius: 4px;
+}
+
+/*CHECK OTHER GALLERY*/
+
+.gallery__container {
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border: 1px solid hsla(82, 39%, 30%, 0.5);
+    border-radius: 4px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+    margin: 30px;
+    background-color: #b8b6b613;
+}
+
+.more__gallery-container {
+    gap: 40px;
+}
+
+.gallery-link {
+    display: inline-block;
+    margin-top: 20px;
+    background-color:#d8f2b8;
+    color: #556B2F;
+    align-items:flex-end;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.gallery-link:hover {
+    background-color: #556B2F;
+    color: #d8f2b8;
 }
 
 /*FOOTER*/
