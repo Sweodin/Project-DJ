@@ -1,0 +1,117 @@
+
+/*----- Background -----*/
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: #069999;
+}
+
+.block_Labels {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.form_Gender {
+  margin-left: 15px;
+  width: 91%;
+  height: 45px;
+  font-size: 18px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.my_Form {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  font-size: 2rem;
+}
+
+/*----- Styles -----*/
+
+#sign_Btn {
+  display: block;
+  padding: 10px;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 10px;
+  background: rgb(52, 122, 228);
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+#sign_Btn:hover {
+  background: rgb(10, 92, 214);
+}
+
+#Create_Btn {
+  display: block;
+  padding: 10px;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 10px;
+  background: rgb(52, 122, 228);
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+#Create_Btn:hover {
+  background: black;
+}
+
+#login_Checkbox {
+  margin: 10px auto 10px;
+}
+
+.my_Border {
+  border: 1px solid rgb(248, 248, 248);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  background: #aee6e6;
+}
+/*----- SIGN UP STYLES -----*/
+
+.sign_Up {
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  background: rgb(3, 138, 82);
+  border: none;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.sign_Up:hover {
+  background: rgb(73, 240, 170);
+}
+
+.form_Inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 18px;
+}
+
+.form_Inputs input {
+  padding: 10px;
+  font-size: 16px;
+  width: 95%;
+}
