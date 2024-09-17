@@ -296,7 +296,7 @@ header{
 
 .hero{
     position:relative;
-    background: url("../image/gallery-image/our-dj-hero.jpg") no-repeat center center/cover;
+    background: url("../image/gallery-image/our-dj-image/our-dj-hero.jpg") no-repeat center center/cover;
     max-width: 1200px;
     width: 100%;
     height: 90vh;
@@ -404,7 +404,7 @@ header{
 /*CHECK OTHER GALLERY*/
 
 .other__gallery-bg{
-    background: url("../image/gallery-image/other-gallery-bg.jpg")no-repeat center center/cover;
+    background: url("../image/gallery-image/our-dj-image/other-gallery-bg.jpg")no-repeat center center/cover;
 }
 
 .other__gallery-heading,
