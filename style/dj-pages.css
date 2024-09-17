@@ -5,8 +5,12 @@
 }
 
 body{
+    background-color:rgba(216, 242, 184, 0.2);
+    padding-top: 100px;
+}
+
+.primary{
     background-color: #d8f2b8;
-    padding-top: 120px;
 }
 
 h1{
@@ -19,8 +23,22 @@ h1{
     line-height: 2px;
 }
 
+h2{
+    font-family: "Roboto", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 50px;
+    color:#000000;
+    letter-spacing: 2px;
+    margin: 20px;
+}
 
-p{
+.tc{
+    text-align: center;
+}
+
+p,
+.shop{
     font-family: "Merriweather", serif;
     font-weight: 400;
     color:#0b0b0b;
@@ -30,15 +48,46 @@ p{
 }
 
 a{
-    text-decoration: none ;
+    color:black;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#556B2F;
+}
+
+.tc{
+    text-align: center;
+}
+
+.pb50{
+    padding-bottom: 50px;
+}
+
+.pt50{
+    padding-top: 50px;
+}
+.mr20{
+    margin-right: 20px;
 }
 
 .mb20{
     margin-bottom: 20px;
 }
 
+.m10{
+    margin: 10px;
+}
+
+.mb100{
+    margin-bottom: 100px;
+}
 .none{
     display: none;
+}
+
+.wrap{
+    flex-wrap: wrap;
 }
 
 .flex{
@@ -49,12 +98,16 @@ a{
     justify-content: center;
 }
 
-.j__flex-start{
-    justify-content: flex-start;
+.j__evenly{
+    justify-content:space-evenly;
 }
 
 .a__center{
     align-items: center;
+}
+
+.a__baseline{
+    align-items: baseline;
 }
 
 .col{
@@ -210,17 +263,71 @@ header{
 
  /*DJ PAGE*/
 
- .dj__page-container{
+ .dj__page-hero-container{
     max-width: 1200px;
     width: 100%;
-    margin: auto;
+    min-height: 650px;
+    margin:auto;
  }
+
 .image{
     width: 300px;
     border-radius: 4px;
     box-shadow: 2px 2px 5px black;
 }
 
+/**Equipment**/
+.equipment__section{
+    max-width: 1200px;
+    width: 100%;
+    min-height: 400px;
+    margin: auto;
+}
+
+.equipment__image{
+    border-top: 1px solid rgba(0, 0, 0, 0.273);
+    padding-top: 50px;
+}
+.image_eq{
+    width: 300px;
+    height: auto;
+}
+
+.image_eq img{
+    max-width: 200px;
+    min-height: 200px;
+    margin: 10px;
+}
+
+/**NEXT EVENTS**/
+
+.bg {
+    background: url("../image/dj-page/event.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.next__events-container{
+    max-width: 1200px;
+    width: 100%;
+    min-height: 500px;
+}
+
+.event{
+    max-width: 300px;
+    min-height: 200px;
+    width: 100%;
+    height: auto;
+    border: 1px solid hsla(82, 39%, 30%, 0.5);
+    border-radius: 4px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+    margin: 30px;
+    background-color: #d8f2b8;
+    transition: 0.3s ease-in-out;
+}
+
+.event:hover{
+    background-color:#ffffff;
+}
 
  /*FOOTER*/
  footer{
