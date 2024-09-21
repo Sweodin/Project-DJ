@@ -130,6 +130,10 @@ a:hover{
     gap: 10px;
 }
 
+.shadow{
+    box-shadow: 0 15px 20px #b8b6b6;
+}
+
 a,
 button,
 .icon{
@@ -337,6 +341,10 @@ header{
 }
 
 .next__events-container{
+    width: 100%;
+}
+
+.next__events-container-box{
     max-width: 1200px;
     width: 100%;
     min-height: 500px;
