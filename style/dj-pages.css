@@ -10,7 +10,11 @@ body{
 }
 
 .primary{
-    background-color: #d8f2b8;
+    background-color:#d8f2b8;
+}
+
+.white{
+    color:#FFFFFF;
 }
 
 h1{
@@ -38,6 +42,7 @@ h2{
 }
 
 p,
+span,
 .shop{
     font-family: "Merriweather", serif;
     font-weight: 400;
@@ -45,6 +50,10 @@ p,
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 25px;
+}
+
+.shop{
+    font-size: 14px;
 }
 
 a{
@@ -106,12 +115,19 @@ a:hover{
     align-items: center;
 }
 
+.a__start{
+    align-items: flex-start;
+}
 .a__baseline{
     align-items: baseline;
 }
 
 .col{
     flex-direction: column;
+}
+
+.gap10{
+    gap: 10px;
 }
 
 a,
@@ -270,6 +286,11 @@ header{
     margin:auto;
  }
 
+ .equipment__section-title{
+    width: 100%;
+    margin: auto;
+ }
+ 
 .image{
     width: 300px;
     border-radius: 4px;
@@ -278,14 +299,19 @@ header{
 
 /**Equipment**/
 .equipment__section{
-    max-width: 1200px;
     width: 100%;
     min-height: 400px;
     margin: auto;
 }
 
+.primary__section-info{
+    max-width: 1200px;
+    width: 100%;
+    min-height: auto;
+    margin: auto;
+}
+
 .equipment__image{
-    border-top: 1px solid rgba(0, 0, 0, 0.273);
     padding-top: 50px;
 }
 .image_eq{

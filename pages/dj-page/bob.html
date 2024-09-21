@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../style/normalize.css">
     <link rel="stylesheet" href="../../style/dj-pages.css">
     <title>Project DJ</title>
@@ -53,9 +54,15 @@
     </header>
 
         <!--About me-->
-        <section class="primary">
             <section class="dj__page-hero-container flex j__evenly a__center">
-                <img src="../../image/gallery-image/our-dj-image/dj1.jpg" class="image mr20" alt="Bob Dj">
+                <section class="flex j__flex-start a__start col gap10">
+                    <img src="../../image/gallery-image/our-dj-image/dj1.jpg" class="image mr20" alt="Bob Dj">
+                        <p>Name: Bob Martinsson</p>
+                        <section class="flex j__flex-start a__baseline">
+                            <p>Email:</p><span><a href="mailto:example@example.com"> bob@example.com</a></span>
+                        </section>
+                        <p>City: Stockholm</p>
+                </section>
                 <article class="flex j__center a__center col">
                     <h1>Hej, I am Bob</h1>
                     <p class="p20 mb20"> I am a DJ from Stockholm, and my journey into the world of music 
@@ -87,12 +94,18 @@
                     </p>
                 </article>
             </section>
-        </section>
 
         <!--Favorite Equipment-->
         <section class="equipment__section flex j__evenly a__center col">
-            <section class="tc">
+            <section class="primary equipment__section-title flex j__center a__center col">
                 <h2>My favorite equipment</h2>
+                <p class="primary__section-info tc m20">
+                    Check out my DJ gear in action! 
+                    From cutting-edge mixers to powerful speakers, discover the equipment 
+                    I use to create the ultimate sound experience. 
+                    Click the link below to explore and shop the full collection, 
+                    and elevate your own setup to pro-level performance.
+                </p>
             </section>
             <section class="equipment__image flex j__center a__baseline wrap">
                 <section class="image_eq flex j__center col a__center tc m20">
