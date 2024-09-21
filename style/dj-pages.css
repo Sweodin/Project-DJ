@@ -297,6 +297,10 @@ header{
     box-shadow: 2px 2px 5px black;
 }
 
+.event-list p{
+    font-size: 14px;
+}
+
 /**Equipment**/
 .equipment__section{
     width: 100%;
