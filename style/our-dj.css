@@ -127,7 +127,7 @@ a,
     margin: auto;
  }
 
- .m20{
+.m20{
     margin: 20px;
  }
 
@@ -135,21 +135,21 @@ a,
     padding: 100px;
 }
 
- .p10{
+.p10{
     padding: 10px;
  }
 
- .tc{
+.tc{
     text-align: center;
  }
 
- .ml2rem{
+.ml2rem{
     margin-left:2rem;
  }
 
- .pointer{
+.pointer{
     cursor:pointer;
- }
+}
 
 
 header{
@@ -289,6 +289,10 @@ header{
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
  }
 
+ .login{
+    background-color: #d8f2b8;
+ }
+
  .join:hover{
     background-color: #d8f2b8;
     color:#556B2F;
@@ -324,7 +328,7 @@ header{
     margin-top: 150px;
 }
 
-.galleri__info-text{
+.gallery__info-text{
     max-width: 1200px;
     width: 100%;
     margin: auto;
@@ -392,9 +396,7 @@ header{
     color:#FFFFFF;
 }
 
-
-
-.gallery__container {
+.gallery__container{
     position: relative;
     max-width: 300px;
     width: 100%;
