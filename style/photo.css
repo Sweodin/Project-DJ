@@ -380,16 +380,21 @@ header{
     height: 100%;
     object-fit: cover;
     border-radius: 4px;
-    opacity: 1;
-    transition: 0.2s ease-in-out;
-}
-
-.gallery-img:hover {
-    opacity: 1;
-}
-
-.gallery-img:not(:hover) {
     opacity: 0.8;
+    transition: all 0.3s ease-in-out; 
+}
+
+.gallery-img:hover{
+    opacity: 1;
+}
+
+.grid-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.grid-item:hover .gallery-img {
+    transform: scale(1.1);
 }
 
 
