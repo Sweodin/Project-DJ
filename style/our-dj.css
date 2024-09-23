@@ -308,6 +308,15 @@ header{
     margin-bottom: 100px;
 }
 
+.img-animation{
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn{
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
 .hero-text{
     position: absolute;
     top: 50%;  
