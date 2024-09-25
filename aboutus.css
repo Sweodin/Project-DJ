@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #a8aaa5;
+}
+
+/* grid container about product */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: 0.5fr 1fr;
+    border: 2px solid black;
+    width: vw;
+    gap: 20pt;
+    padding: 20px;
+}
+.description {
+    grid-column: 1 /4;
+    border: 10px solid rgb(75, 75, 80);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.why-dj {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    border: 2px solid black;
+    width: auto;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #d8f2b8;
+
+}
+
+.who-we-are {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    border: 15px solid #d8f2b8;
+    width: auto;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #d8f2b8;
+
+}
+.what-we-do {
+    grid-column: 3 / 3;
+    grid-row: 2 / 3;
+    border: 2px solid black;
+    width: auto;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #d8f2b8;
+}
+/* extra tjänster */
+.extra-container {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    height: 30vh;
+    width: auto;
+    padding: 20px;
+}
+
+ul {
+    list-style: none; 
+}
+
+.rubrik {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+img {
+    height: 200pt;
+    width:300pt;
+    
+}
