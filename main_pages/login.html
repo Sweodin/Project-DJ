@@ -14,24 +14,35 @@
   </head>
   <body>
     <!----- Login Page ----->
-    <div class="my_Form">
-      <form action="">
-        <div class="my_Border">
-          <h1>Please sign in</h1>
-          <label for="emailbox" class="block_Labels">Email:</label>
+
+    <section class="login">
+      <div class="form_Container">
+        <form action="">
+          <h1 class="neonText">Please Sign In</h1>
+
+          <!----- Email ----->
+
+          <label for="emailbox">Email:</label>
           <input type="email" id="emailbox" />
-          <label for="password" class="block_Labels">Password:</label>
+
+          <!----- Password ----->
+
+          <label for="password">Password:</label>
           <input type="password" id="password" />
 
-          <div id="login_Checkbox">
+          <!----- Remember Me Checkbox ----->
+
+          <div class="form_Checkbox">
             <input type="checkbox" id="my_Checkbox" />
             <label for="my_Checkbox">Keep me signed in</label>
           </div>
 
-          <button id="sign_Btn">Sign In</button>
-          <a class="sign_Up" href="/main_pages/Join.html">Sign Up</a>
-        </div>
-      </form>
-    </div>
+          <!----- Buttons ----->
+
+          <button type="submit" id="sign_Btn">Sign In</button>
+          <a href="/main_pages/Join.html" class="sign_Up">Sign Up</a>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
