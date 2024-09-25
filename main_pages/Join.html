@@ -14,47 +14,49 @@
   </head>
   <body>
     <!----- Signup Page ----->
-    <section class="join_Us location">
-      <div class="my_Form location">
+
+    <section class="join_Us">
+      <div class="form_Container">
         <form action="">
-          <div class="my_Border location">
-            <h1>Create New Account</h1>
-            <div class="form_Inputs">
-              <input type="text" placeholder="First name" />
-            </div>
+          <h1 class="neonText">Create New Account</h1>
 
-            <div class="form_Inputs">
-              <input type="text" class="form_Inputs" placeholder="Last name" />
-            </div>
+          <!----- Form Name ----->
 
-            <label for="select" class="form_Inputs">Choose your Gender</label>
-            <div>
-              <select name="Gender" class="form_Gender" id="Gender">
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-              </select>
-            </div>
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
 
-            <div class="form_Inputs">
-              <input type="email" placeholder="Email address" />
-            </div>
+          <!-- Gender Selection -->
 
-            <div class="form_Inputs">
-              <input type="password" placeholder="Enter your password" />
-            </div>
+          <label for="gender">Choose Your Gender</label>
+          <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
 
-            <div class="form_Inputs">
-              <input type="password" placeholder="Retype your password" />
-            </div>
+          <!-- Email -->
 
-            <label for="birthday" class="form_Inputs">Birthday</label>
-            <div class="form_Inputs">
-              <input type="date" id="birthday" placeholder="" />
-            </div>
+          <input type="email" placeholder="Email Address" />
 
-            <button id="Create_Btn">Create Account</button>
-            <a class="sign_Up" href="/index.html">Home</a>
-          </div>
+          <!-- Password -->
+
+          <input type="password" placeholder="Enter Your Password" />
+
+          <!-- Confirm Password -->
+
+          <input type="password" placeholder="Retype Your Password" />
+
+          <!-- Birthday -->
+
+          <label for="birthday">Birthday</label>
+          <input type="date" id="birthday" />
+
+          <!-- Create Account Button -->
+
+          <button type="submit" id="create_Btn">Create Account</button>
+
+          <!-- Home Link -->
+
+          <a href="/index.html" class="sign_Up">Home</a>
         </form>
       </div>
     </section>
