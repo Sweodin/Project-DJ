@@ -58,7 +58,92 @@ select {
 }
 
 /*----- Button Styles -----*/
-button,
+
+:root {
+  --glow-color: #d8f2b8;
+}
+
+.glow_Btn {
+  cursor: pointer;
+  background: none;
+  color: var(--glow-color);
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1.5rem;
+  perspective: 5rem;
+  border-radius: 0.5rem;
+  border: 0.25rem solid var(--glow-color);
+  box-shadow: inset 0 0 0.75 var(--glow-color), 0 0 0.75rem 0 var(--glow-color);
+  animation: border-flash 1500ms linear infinite;
+}
+
+.glow_txt {
+  text-shadow: 0 0 0.25rem hsl(50, 0%, 100% / 0.5),
+    0 0 0.5rem var(var(--glow-color));
+  animation: text-flash 3600ms linear infinite;
+}
+
+.flashing_Letter {
+  opacity: 0.5;
+  animation: broken-flash 600ms linear infinite;
+}
+
+.glow_Btn::before {
+  content: "";
+  pointer-events: none;
+  background: var(--glow-color);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  filter: blur(2.5rem);
+  transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+  opacity: 0.7;
+}
+
+.glow_Btn::after {
+  content: none;
+  background-color: var(--glow-color);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  box-shadow: 0 0 4rem 0.5rem var(--glow-color);
+  transition: opacity 200ms linear;
+  z-index: -1;
+}
+
+.glow_Btn:hover {
+  color: #000;
+  text-shadow: none;
+  animation: none;
+}
+.glow_Btn:hover,
+.glow_Txt {
+  animation: none;
+}
+
+.glow_Btn:hover,
+.glow_Txt {
+  text-shadow: none;
+  opacity: 1;
+  animation: none;
+}
+
+.glow_Btn:hover::before {
+  filter: blur(3rem);
+  opacity: 1;
+}
+
+.glow_Btn:hover::after {
+  opacity: 1;
+}
+
+/* button,
 .sign_Up {
   display: block;
   width: 100%;
@@ -74,6 +159,7 @@ button,
   transform: scale(1.1);
 }
 
+
 button:hover,
 .sign_Up:hover {
   background: rgb(190, 39, 178);
@@ -84,7 +170,7 @@ button:hover,
 .sign_Up {
   text-decoration: none;
   text-align: center;
-}
+} */
 
 .form_Checkbox {
   display: flex;
@@ -134,6 +220,97 @@ input::placeholder {
   24%,
   55% {
     text-shadow: none;
+  }
+}
+/*----- Flickering animation Buttons and Text -----*/
+
+@keyframes broken-flash {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 0.1;
+  }
+  4% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 0.4;
+  }
+  22% {
+    opacity: 0.2;
+  }
+  23% {
+    opacity: 0.1;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  85% {
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 0.1;
+  }
+}
+@keyframes text-flash {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 0.8;
+  }
+  8% {
+    opacity: 0.3;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  12% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  30% {
+    opacity: 0.1;
+  }
+  70% {
+    opacity: 0.6;
+  }
+
+  72% {
+    opacity: 0.4;
+  }
+  75% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes border-flash {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 0.7;
+  }
+  4% {
+    opacity: 0.3;
+  }
+  8% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
