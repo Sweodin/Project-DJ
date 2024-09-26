@@ -239,7 +239,7 @@ header {
 
 .content_Main {
   position: relative;
-  width: 100%;
+  max-width: 100%;
   /* max-width: 1200px; */
   width: 80vw;
   height: 70vh;
