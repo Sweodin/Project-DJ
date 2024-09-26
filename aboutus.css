@@ -5,7 +5,12 @@
 }
 body {
     background-color: #a8aaa5;
+    background-image:url("/Project-DJ/img/djimg.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
 }
+/* OBS ADD FONTS */
 
 /* grid container about product */
 .product-container {
@@ -13,7 +18,8 @@ body {
     grid-template-columns: repeat (3, 1fr);
     grid-template-rows: 0.5fr 1fr;
     border: 2px solid black;
-    width: vw;
+    width: 100vw;
+    height: auto;
     gap: 20pt;
     padding: 20px;
 }
@@ -22,9 +28,14 @@ body {
     border: 10px solid rgb(75, 75, 80);
     border-radius: 15px;
     text-align: center;
+    padding-top: 30px;
+    height: auto;
+    width: auto;
+    background-color: #d8f2b8;
+
 }
 
-.why-dj {
+.who {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     border: 2px solid black;
@@ -32,55 +43,71 @@ body {
     border-radius: 5px;
     padding: 10px;
     background-color: #d8f2b8;
+    text-align: center;
 
 }
 
-.who-we-are {
+.why {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    border: 15px solid #d8f2b8;
+    border: 2px solid black;
     width: auto;
     border-radius: 5px;
     padding: 10px;
     background-color: #d8f2b8;
+    text-align: center;
 
 }
-.what-we-do {
+.offer {
     grid-column: 3 / 3;
     grid-row: 2 / 3;
     border: 2px solid black;
     width: auto;
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 10px;
     background-color: #d8f2b8;
+    text-align: center;
 }
 /* extra tjänster */
-.extra-container {
+.moments {
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
-    height: 30vh;
+    background-color: #d8f2b8;
+    height: 10vh;
     width: auto;
     padding: 20px;
+    opacity: 0.8;
+    align-items: center;
+    font-size: 50px;
+    font-family: Merriweather, sans-serif; 
+    color:#323b26;
+    font-weight: 400;
 }
 
 ul {
     list-style: none; 
 }
 
-.rubrik {
-    font-size: 20px;
-    font-weight: bold;
 
+/* Font and extra styles */
+
+h2, h3 {
+    color:#323b26;
+    font-weight: bold;
+    font-family: Merriweather, sans-serif; 
+    font-size: 20pt;
+}
+p {
+    font-family: Roboto, sans-serif;
 }
 
-h3 {
-    font-size: 25px;
-    font-weight: bold;
-}
 
-img {
-    height: 200pt;
-    width:300pt;
-    
+/* Buttons */
+
+.call-to-action {
+    padding-top: 10px;
+    height: 30pt;
+    width: 50pt;
+    align-items: center;
+
 }
