@@ -22,6 +22,7 @@ body {
     height: auto;
     gap: 20pt;
     padding: 20px;
+    align-items: center;
 }
 .description {
     grid-column: 1 /4;
@@ -44,6 +45,7 @@ body {
     padding: 10px;
     background-color: #d8f2b8;
     text-align: center;
+    height: 30vh;
 
 }
 
@@ -56,6 +58,8 @@ body {
     padding: 10px;
     background-color: #d8f2b8;
     text-align: center;
+    height: 30vh;
+    align-items: baseline;
 
 }
 .offer {
@@ -67,13 +71,14 @@ body {
     padding: 10px;
     background-color: #d8f2b8;
     text-align: center;
+    height: 30vh;
 }
 /* extra tjänster */
 .moments {
     display: flex;
     flex-direction: column;
     background-color: #d8f2b8;
-    height: 10vh;
+    height: 15vh;
     width: auto;
     padding: 20px;
     opacity: 0.8;
@@ -98,16 +103,25 @@ h2, h3 {
     font-size: 20pt;
 }
 p {
+    margin-top: 10px;
     font-family: Roboto, sans-serif;
+    line-height: 18pt;
+    font-size: 18pt;
 }
 
 
 /* Buttons */
 
 .call-to-action {
-    padding-top: 10px;
-    height: 30pt;
-    width: 50pt;
+    height: 100pt;
+    width: 130pt;
     align-items: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color:#323b26;
+    color: white;
+    opacity: 1;
+    font-size: 20px;
+    font-family: Roboto, sans-serif;
 
 }
