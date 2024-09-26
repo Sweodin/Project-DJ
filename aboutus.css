@@ -7,7 +7,7 @@ body {
     background-color: #a8aaa5;
     background-image:url("/Project-DJ/img/djimg.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     opacity: 1;
 }
 /* OBS ADD FONTS */
@@ -15,14 +15,14 @@ body {
 /* grid container about product */
 .product-container {
     display: grid;
-    grid-template-columns: repeat (3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.5fr 1fr;
     border: 2px solid black;
     width: 100vw;
     height: auto;
     gap: 20pt;
-    padding: 20px;
     align-items: center;
+    padding: 20px;
 }
 .description {
     grid-column: 1 /4;
@@ -30,6 +30,7 @@ body {
     border-radius: 15px;
     text-align: center;
     padding-top: 30px;
+    padding-bottom: 30px;
     height: auto;
     width: auto;
     background-color: #d8f2b8;
@@ -45,7 +46,7 @@ body {
     padding: 10px;
     background-color: #d8f2b8;
     text-align: center;
-    height: 30vh;
+    height: 40vh;
 
 }
 
@@ -58,7 +59,7 @@ body {
     padding: 10px;
     background-color: #d8f2b8;
     text-align: center;
-    height: 30vh;
+    height: 40vh;
     align-items: baseline;
 
 }
@@ -71,7 +72,7 @@ body {
     padding: 10px;
     background-color: #d8f2b8;
     text-align: center;
-    height: 30vh;
+    height: 40vh;
 }
 /* extra tjänster */
 .moments {
@@ -102,6 +103,9 @@ h2, h3 {
     font-family: Merriweather, sans-serif; 
     font-size: 20pt;
 }
+h2 {
+    font-size: 30px;
+}
 p {
     margin-top: 10px;
     font-family: Roboto, sans-serif;
@@ -114,7 +118,7 @@ p {
 
 .call-to-action {
     height: 100pt;
-    width: 130pt;
+    width: 150pt;
     align-items: center;
     border-radius: 20px;
     margin-top: 20px;
@@ -123,5 +127,48 @@ p {
     opacity: 1;
     font-size: 20px;
     font-family: Roboto, sans-serif;
+    transition-duration: 0.4s;
 
+}
+.call-to-action:hover {
+    background-color:#90eb21;
+    color: black;
+    font-size: 23px;
+    font-weight: 1000;
+}
+.review-container {
+    width: 800px;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: 2px solid white;
+}
+
+/* media queries */
+/* mobil */
+@media screen and (max-width: 768px) {
+.product-container {
+    display: grid;
+    grid-template-columns: 1fr; /*only one fr in mobile*/
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+
+}
+/* .description, .who, .why, .offer {
+    grid-column: 1 / 2;
+    height: auto;
+    padding: 10px;
+    margin: 0;
+}  */
+/* .who, .why, .offer {
+    grid-column: 1 / 2 ;
+} */
+/* .why {
+    grid-column: 1 / 4;
+}
+.offer {
+    grid-column: 1 / 5;
+
+} */
 }
