@@ -4,11 +4,10 @@
   margin: 0;
 }
 
-body{
-    background-color:rgba(216, 242, 184, 0.2);
-    padding-top: 106px;
+body {
+  background-color: rgba(216, 242, 184, 0.2);
+  padding-top: 106px;
 }
-
 
 a {
   text-decoration: none;
@@ -239,11 +238,9 @@ header {
 
 .content_Main {
   position: relative;
-  width: 100%;
-  /* max-width: 1200px; */
+  max-width: 100%;
   width: 80vw;
   height: 70vh;
-  /* padding: 50px; */
   background-image: url("/image/img_Landing_Page/Background.jpg");
   background-size: cover;
   background-position: center;
@@ -265,8 +262,8 @@ header {
 }
 
 .content_Main_Text {
-  position: absolute;
-  width: 50%;
+  position: relative;
+  max-width: 50%;
   top: 50%;
   left: 25%;
   transform: translateY(-50%);
@@ -274,7 +271,6 @@ header {
   border-radius: 4px;
   background-color: rgba(216, 242, 184, 0.4);
   box-shadow: 2px 2px 9px black;
-  /* color: rgb(7, 7, 7); */
   text-align: center;
 }
 
