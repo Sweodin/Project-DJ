@@ -19,7 +19,7 @@ body {
     grid-template-rows: 0.5fr 1fr;
     border: 2px solid black;
     width: 100vw;
-    height: auto;
+    height: 100%;
     gap: 20pt;
     align-items: center;
     padding: 20px;
@@ -47,6 +47,7 @@ body {
     background-color: #d8f2b8;
     text-align: center;
     height: 40vh;
+    opacity: 0.8;
 
 }
 
@@ -61,6 +62,7 @@ body {
     text-align: center;
     height: 40vh;
     align-items: baseline;
+    opacity: 0.8;
 
 }
 .offer {
@@ -73,6 +75,7 @@ body {
     background-color: #d8f2b8;
     text-align: center;
     height: 40vh;
+    opacity: 0.8;
 }
 /* extra tjänster */
 .moments {
@@ -104,7 +107,7 @@ h2, h3 {
     font-size: 20pt;
 }
 h2 {
-    font-size: 30px;
+    font-size: 40px;
 }
 p {
     margin-top: 10px;
@@ -137,38 +140,31 @@ p {
     font-weight: 1000;
 }
 .review-container {
-    width: 800px;
+    width: 100vw;
     height: 800px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    border: 2px solid white;
+    border: 5px solid white;
 }
 
+
+
 /* media queries */
-/* mobil */
 @media screen and (max-width: 768px) {
 .product-container {
-    display: grid;
-    grid-template-columns: 1fr; /*only one fr in mobile*/
-    grid-template-rows: auto auto auto auto;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 
 }
-/* .description, .who, .why, .offer {
-    grid-column: 1 / 2;
+ .who, .why, .offer {
     height: auto;
     padding: 10px;
-    margin: 0;
-}  */
-/* .who, .why, .offer {
-    grid-column: 1 / 2 ;
-} */
-/* .why {
-    grid-column: 1 / 4;
+    margin: 0; 
+ }
+ p {   
+    font-size: 12px;
+    line-height: 12pt;
 }
-.offer {
-    grid-column: 1 / 5;
-
-} */
 }
