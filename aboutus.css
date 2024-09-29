@@ -165,6 +165,7 @@ p {
     color: black;
     font-size: 40px;
     font-weight: 1000;
+    cursor: pointer;
 }
 /* review container */
 .review-outer-container {
