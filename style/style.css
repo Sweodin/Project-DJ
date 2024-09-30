@@ -156,33 +156,6 @@ header{
     margin-right: 25px;
 }
 
-.btn{
-    padding: 10px 25px;
-    border-radius: 20px;
-    border: 0px;
-    background-color: #d8f2b8;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    color:#556B2F;
-    letter-spacing: 1px;
-}
-
-.btn:hover{
-    background-color:#cbf696;
-    color:#3d4d22
-}
-
-.join{
-    background-color: inherit;
-    border: 1px solid #d8f2b8;
-    color:#d8f2b8;  
- }
-
- .join:hover{
-    color:#556B2F;
- }
-
  /*FOOTER*/
  footer{
     width: 100%;
@@ -260,7 +233,7 @@ header{
         padding: 15px 30;
         margin: 20px 0;
     }
-    
+
     .link{
         padding-top:30px;
     }
