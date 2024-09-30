@@ -5,7 +5,7 @@
 }
 body {
     background-color: #a8aaa5;
-    background-image:url("/Project-DJ/img/djimg.jpg");
+    background-image:url("/image/aboutus/djimg.jpg");
     background-position: center;
     background-size: cover;
     opacity: 1;
@@ -200,7 +200,7 @@ p {
 }
 /* olika reviewbox extras för olika img */
 .Anna {
-    background-image: url("/Project-DJ/img/Anna.png");
+    background-image: url("/image/aboutus/Anna.png");
     background-position: center;
     background-size: 150px;
     background-repeat: no-repeat;
@@ -208,14 +208,14 @@ p {
 }
 
 .Joe {
-    background-image: url("/Project-DJ/img/Joe.png");
+    background-image: url("/image/aboutus/Joe.png");
     background-position: center;
     background-size: 150px;
     background-repeat: no-repeat;
     opacity: 1;
 }
 .Amber {
-    background-image: url("/Project-DJ/img/Amber.png");
+    background-image: url("/image/aboutus/Amber.png");
     background-position: center;
     background-size: 150px;
     background-repeat: no-repeat;
@@ -223,7 +223,7 @@ p {
 }
 
 .Ali {
-    background-image: url("/Project-DJ/img/Ali.png");
+    background-image: url("/image/aboutus/Ali.png");
     background-position: center;
     background-size: 150px;
     background-repeat: no-repeat;
