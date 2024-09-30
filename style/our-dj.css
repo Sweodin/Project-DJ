@@ -6,7 +6,7 @@
 
 body{
     background-color:rgba(216, 242, 184, 0.2);
-    padding-top: 85px;
+    padding-top: 106px;
 }
 
 .primary{
@@ -108,7 +108,7 @@ a,
 }
 
 .right{
-    right:-30%;
+    right:-10%;
 }
 
 .left{
@@ -127,7 +127,7 @@ a,
     margin: auto;
  }
 
- .m20{
+.m20{
     margin: 20px;
  }
 
@@ -135,21 +135,21 @@ a,
     padding: 100px;
 }
 
- .p10{
+.p10{
     padding: 10px;
  }
 
- .tc{
+.tc{
     text-align: center;
  }
 
- .ml2rem{
+.ml2rem{
     margin-left:2rem;
  }
 
- .pointer{
+.pointer{
     cursor:pointer;
- }
+}
 
 
 header{
@@ -289,6 +289,10 @@ header{
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
  }
 
+ .login{
+    background-color: #d8f2b8;
+ }
+
  .join:hover{
     background-color: #d8f2b8;
     color:#556B2F;
@@ -296,13 +300,21 @@ header{
 
 .hero{
     position:relative;
-    background: url("../image/gallery-image/our-dj-hero.jpg") no-repeat center center/cover;
-    max-width: 1200px;
+    background: url("../image/gallery-image/our-dj-image/our-dj-hero1.jpg") no-repeat center center/cover;
+    max-width: 100%;
     width: 100%;
     height: 90vh;
     border-radius: 4px;
-    margin: auto;
     margin-bottom: 100px;
+}
+
+.img-animation{
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn{
+    from {opacity: 0}
+    to {opacity: 1}
 }
 
 .hero-text{
@@ -325,7 +337,7 @@ header{
     margin-top: 150px;
 }
 
-.galleri__info-text{
+.gallery__info-text{
     max-width: 1200px;
     width: 100%;
     margin: auto;
@@ -343,35 +355,16 @@ header{
 .gallery__photo-container{
     max-width: 1200px;
     width: 100%;
+    min-height: auto;
     margin: auto;
-    gap: 40px;
+    gap: 20px;
 }
-
-.photo-container {
-    position: relative;
-}
-
-.dj-name {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color:#3d4d22;
-    border-radius: 20px;
-    opacity:0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.photo-container:hover .dj-name{
-    opacity:1;
-}
-
 
 .image{
     width: 200px;
     height: auto;
     border-radius: 4px;
-    opacity: 0.5;
+    opacity: 0.8;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
@@ -404,7 +397,7 @@ header{
 /*CHECK OTHER GALLERY*/
 
 .other__gallery-bg{
-    background: url("../image/gallery-image/other-gallery-bg.jpg")no-repeat center center/cover;
+    background: url("../image/gallery-image/our-dj-image/other-gallery-bg.jpg")no-repeat center center/cover;
 }
 
 .other__gallery-heading,
@@ -412,9 +405,7 @@ header{
     color:#FFFFFF;
 }
 
-
-
-.gallery__container {
+.gallery__container{
     position: relative;
     max-width: 300px;
     width: 100%;

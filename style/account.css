@@ -1,0 +1,329 @@
+/*----- General Styles -----*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("/image/img_Landing_Page/Welcome.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*----- Glass Effect for Forms -----*/
+
+.form_Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  padding: 30px;
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border-top: 2px solid rgba(248, 248, 248, 0.5);
+  box-shadow: 20px 20px 50px rgb(0, 0, 0, 1);
+  color: #fff;
+  text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+.neonText {
+  animation: flicker 2s infinite alternate;
+  color: #fff;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  color: #000000;
+  outline: none;
+}
+
+/*----- Button Styles -----*/
+
+:root {
+  --glow-color: #d8f2b8;
+}
+
+.glow_Btn {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 15px;
+  cursor: pointer;
+  background: none;
+  color: var(--glow-color);
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1.2rem;
+  perspective: 5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  border: 0.25rem solid var(--glow-color);
+  box-shadow: inset 0 0 0.75 0 var(--glow-color),
+    0 0 0.75rem 0 var(--glow-color);
+  animation: border-flash 1500ms linear infinite;
+}
+
+.glow_Txt {
+  text-shadow: 0 0 0.25rem hsl(50, 0%, 100% / 0.5), 0 0 0.5rem var(--glow-color);
+  animation: text-flash 3600ms linear infinite;
+}
+
+.flashing_Letter {
+  opacity: 0.5;
+  animation: broken-flash 600ms linear infinite;
+}
+
+/*----- Remove the glow shadow -----*/
+
+#sign_Btn::before,
+#sign_Btn::after,
+#create_Btn::before,
+#create_Btn::after {
+  content: none;
+  box-shadow: none;
+  filter: none;
+}
+
+.glow_Btn::before {
+  content: "";
+  pointer-events: none;
+  background: var(--glow-color);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  filter: blur(2.5rem);
+  transform: translateY(150%) rotateX(95deg) scale(1, 0.35);
+  opacity: 0.7;
+}
+
+.glow_Btn::after {
+  content: none;
+  background-color: var(--glow-color);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  box-shadow: 0 0 4rem 0.5rem var(--glow-color);
+  transition: opacity 200ms linear;
+  z-index: -1;
+}
+
+.glow_Btn:hover {
+  color: #fff;
+  text-shadow: none;
+  animation: none;
+}
+.glow_Btn:hover,
+.glow_Txt {
+  animation: none;
+}
+
+.glow_Btn:hover,
+.glow_Txt {
+  text-shadow: none;
+  opacity: 1;
+  animation: none;
+}
+
+.glow_Btn:hover::before {
+  filter: blur(3rem);
+  opacity: 1;
+}
+
+.glow_Btn:hover::after {
+  opacity: 1;
+}
+
+.form_Checkbox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/*----- Form Labels -----*/
+
+.form_Checkbox label {
+  font-size: 1.5rem;
+  color: #d8f2b8;
+}
+.form_Checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+label {
+  margin: 10px 0 5px;
+  font-size: 1.5rem;
+  color: #d8f2b8;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+/*----- Input Styling -----*/
+input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/*----- Flickering animation -----*/
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #d8f2b8,
+      0 0 80px #d8f2b8, 0 0 90px #d8f2b8, 0 0 100px #d8f2b8, 0 0 150px #d8f2b8;
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+/*----- Flickering animation Buttons and Text -----*/
+
+@keyframes broken-flash {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 0.1;
+  }
+  4% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 0.4;
+  }
+  22% {
+    opacity: 0.2;
+  }
+  23% {
+    opacity: 0.1;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  85% {
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 0.1;
+  }
+}
+@keyframes text-flash {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 0.8;
+  }
+  8% {
+    opacity: 0.3;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  12% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  30% {
+    opacity: 0.1;
+  }
+  70% {
+    opacity: 0.6;
+  }
+
+  72% {
+    opacity: 0.4;
+  }
+  75% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes border-flash {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 0.7;
+  }
+  4% {
+    opacity: 0.3;
+  }
+  8% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*----- Glow effects for text -----*/
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d8f2b8,
+      0 0 40px #d8f2b8, 0 0 50px #d8f2b8, 0 0 60px #d8f2b8, 0 0 70px #d8f2b8;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #d8f2b8, 0 0 40px #d8f2b8,
+      0 0 50px #d8f2b8, 0 0 60px #d8f2b8, 0 0 70px #d8f2b8, 0 0 80px #d8f2b8;
+  }
+}
+/*----- Adjusting Gender Select -----*/
+select {
+  height: 50px;
+  font-size: 1rem;
+}
+
+/*----- Centering the Forms -----*/
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
