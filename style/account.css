@@ -327,9 +327,3 @@ section {
   align-items: center;
   height: 100vh;
 }
-
-.location {
-  border: #c37272;
-  border-width: 3px;
-  border-style: solid;
-}
