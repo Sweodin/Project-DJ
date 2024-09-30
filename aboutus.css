@@ -22,7 +22,7 @@ body {
     animation: glow 1.5s ease-in-out infinite alternate;
   }
   
-  @-webkit-keyframes glow {
+  @keyframes glow {
     from {
       text-shadow: 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #89f506, 0 0 40px #9cf331, 0 0 50px #b1f065, 0 0 60px #baed7b, 0 0 70px #e8eee0;
     }
@@ -147,17 +147,17 @@ p {
 /* Buttons */
 
 .call-to-action {
-    height: 250pt;
+    height: 100pt;
     width: 300pt;
     align-items: center;
     border-radius: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     background-color:#323b26;
     color: white;
     opacity: 1;
     font-size: 30px;
     font-family: "Roboto", sans-serif;
-    transition-duration: 0.4s;
+    transition-duration: 0.6s;
 
 }
 .call-to-action:hover {
@@ -166,6 +166,7 @@ p {
     font-size: 40px;
     font-weight: 1000;
     cursor: pointer;
+    opacity: 1;
 }
 /* review container */
 .review-outer-container {
@@ -245,13 +246,14 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    background: rgb(253, 253, 253);
+    background: #a5b98d;
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.7s ease;
     align-items: center;
     justify-content: center;
     height: 100%;
     width: 100%;
+    padding: 15px;
 
 }
 .review-box:hover .overlay {
@@ -282,7 +284,8 @@ p {
 }
 
 body {
-    background-size: contain; /*?*/
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 h2 {
     font-size: 45px;
@@ -293,7 +296,7 @@ h2 {
     font-size: 20px;
 }
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-align: center;
 }
 
