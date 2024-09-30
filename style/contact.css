@@ -3,6 +3,16 @@
     width: 85%;
     height: 100%;
 }
+.bg{
+    background-color: #c1b778b7;
+    max-width: 100vw;
+    width: 100%;
+    height: 25px;
+    border-radius: 25px;
+    border: #c1b778b7;
+    border-width: 5px;
+    text-align: center;
+}
 .h100{
     height: 150px;
 }
@@ -89,6 +99,9 @@ justify-content: center;
     font-weight: 600;
     font-style: normal;
 }
+.lh{
+    line-height: 27px;
+}
 .contactstyling{
     max-width: 800px;
     margin: 15px;
@@ -101,11 +114,6 @@ justify-content: center;
     border-radius: 25px;
     padding: 15px;
 }
-.location{
-    border: #c37272;
-    border-width: 3px;
-    border-style: solid;
-}
 .beat{
     position: absolute;
     background: url("../image/contactus/crowd.jpg") no-repeat center center/cover;
@@ -117,6 +125,11 @@ justify-content: center;
     z-index: -1;
     top: 25px;
     position:absolute;
+}
+.f-max{
+    max-height: 2000px;
+    height: 100%;
+    justify-content: space-evenly;
 }
 .glow {
     animation: glow 1s ease-in-out infinite alternate;
@@ -131,19 +144,24 @@ justify-content: center;
       text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
   }
-  .glow-01 {
-      animation: glow-01 1s ease-in-out infinite alternate;
-    }
-    
-    @-webkit-keyframes glow-01 {
-      from {
+.glow-01 {
+   animation: glow-01 1s ease-in-out infinite alternate;
+}
+ 
+@-webkit-keyframes glow-01 {
+    from {
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff;
-      }
-      
-      to {
+        }
+        
+    to {
         text-shadow: 0 0 20px #fff, 0 0 30px #c2fdff, 0 0 40px #c2fdff, 0 0 50px #c2fdff, 0 0 60px #c2fdff, 0 0 70px #c2fdff, 0 0 80px #c2fdff;
-      }
     }
+}/*
+.location{
+    border: #c37272;
+    border-width: 3px;
+    border-style: solid;
+}
 /*-----------------------------colapsable box-------------------------------
 .collapsible {
     background-color: #777;
