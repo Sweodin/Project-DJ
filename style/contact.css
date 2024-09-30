@@ -102,7 +102,7 @@
 .textstyle-nfat{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-style:normal;
+    font-style: normal;
 }
 .show{
     color:#0f1804;
@@ -127,14 +127,23 @@
 }
 .beat{
     position: absolute;
-    background: url("../image/contactus/crowd.jpg") no-repeat center center/cover;
     max-width: 100vw;
     width: 100%;
-    height: 95vh;
+    height: 100vh;
+    height: 100%;
     border-radius: 4px;
     margin: auto;
     z-index: -1;
-    top: 25px;
+    top: 0px;
+}
+.Bim{
+    background: url("../image/contactus/crowd.jpg") no-repeat center center/cover;
+}
+.Bim2{
+    background: url("../image/contactus/crowd-02.jpg") no-repeat center center/cover;
+}
+.Bim3{
+    background: url("../image/contactus/crowd-03.jpg") no-repeat center center/cover;
 }
 .room{
     position: absolute;
@@ -144,17 +153,6 @@
     height: 100%;
     top: 0;
     left: 0;
-}
-.beat-01{
-    position: absolute;
-    background: url("../image/contactus/crowd-02.jpg") no-repeat center center/cover;
-    max-width: 100vw;
-    width: 100%;
-    max-height: 100vh;
-    height: 100%;
-    margin: auto;
-    z-index: -1;
-    top: 0px; 
 }
 .formplace{
     max-width: 25vw;
@@ -179,7 +177,7 @@
 .miniboxsize{
     max-width: 185px;
     width: 100%;
-    max-height: 45px;
+    max-height: 35px;
     height: 100%;
 }
 .f40{
@@ -216,7 +214,7 @@
     to {
         text-shadow: 0 0 20px #fff, 0 0 30px #c2fdff, 0 0 40px #c2fdff, 0 0 50px #c2fdff, 0 0 60px #c2fdff, 0 0 70px #c2fdff, 0 0 80px #c2fdff;
     }
-}
+}/*
 .location{
     border: #c37272;
     border-width: 3px;

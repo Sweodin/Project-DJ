@@ -6,14 +6,52 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../style/normalize.css">
-        <link rel="stylesheet" href="../style/style.css">
-        <link rel="stylesheet" href="../style/contact.css">
+        <link rel="stylesheet" href="../../style/normalize.css">
+        <link rel="stylesheet" href="../../style/style.css">
+        <link rel="stylesheet" href="../../style/contact.css">
         <title>Project DJ</title>
     </head>
+    <div class="beat Bim3"></div>
     <header>
     </header>
-    <section>
-        Dj!
+    <section class="room location">
+        <section class="contact flex f-max a__center">
+            <div class="formplace glass">
+                <form class="contact col flex f-max a__center">
+                    <div>
+                        <div>
+                            <p class="textstyle f40">Send your DJ a message!</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="email" class="textstyle-nfat">Enter your email adress:</label>
+                        </div>
+                        <input type="email" id="email" class="glass miniboxsize textstyle-nfat" placeholder="Your Email" required>
+                    </div>
+                    <select id="issue" class="glass miniboxsize textstyle-nfat" placeholder="the DJ of your choice:" required>
+                        <option>Anna</option>
+                        <option>Bob</option>
+                        <option>Gustav</option>
+                        <option>Hakan</option>
+                        <option>Karl</option>
+                        <option>Lili</option>
+                        <option>Lolita</option>
+                        <option>Lucas</option>
+                        <option>Mark</option>
+                        <option>Mel</option>
+                        <option>Otto</option>
+                        <option>Patricia</option>
+                        <option>Souleimani</option>
+                        <option>Stephan</option>
+                    </select>
+                    <textarea id="text" name="text" class="glass textstyle-nfat" rows="10" cols="22" placeholder="tell us what you need!" required></textarea>
+                    <button type="submit" class="btn miniboxsize">Submit</button>
+                    <a href="../contact.html">
+                        <button type="button" class="btn miniboxsize"> return!</button>
+                    </a>
+                </form>
+            </div>
+        </section>
     </section>
 </html>
