@@ -357,20 +357,25 @@ header{
 
 /*Gallery img*/
 .grid-container {
+    max-width: 1200px;
+    width: 100%;
+    min-height: 600px;
     display: grid;
-    grid-template-columns: repeat(5, 250px);
+    grid-template-columns: repeat(5, 1fr);
     gap: 15px;
-    justify-content: center;
+    margin: auto;
+    margin-bottom: 90px;
 }
 
-.span2{
+.span2 {
     grid-row: span 2;
 }
 
-.span-3-5{
+.span-3-5 {
     grid-column: 3 / 6;
 }
-.square{
+
+.square {
     grid-column: span 2;
     grid-row: span 2;
 }
@@ -381,10 +386,10 @@ header{
     object-fit: cover;
     border-radius: 4px;
     opacity: 0.8;
-    transition: all 0.3s ease-in-out; 
+    transition: all 0.3s ease-in-out;
 }
 
-.gallery-img:hover{
+.gallery-img:hover {
     opacity: 1;
 }
 
@@ -396,6 +401,7 @@ header{
 .grid-item:hover .gallery-img {
     transform: scale(1.1);
 }
+
 
 
  /*FOOTER*/

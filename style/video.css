@@ -356,33 +356,70 @@ header{
 }
 
 /*Video Gallery*/
-.video__gallery-container{
-    max-width: 1200px;
-    width: 100%;
-    min-height: 700px;
-    margin: auto;
-}
 
-.video__gallery{
+.video__gallery-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    max-width: 1400px;
+    width: 100%;
+    min-height: 800px;
+    margin: auto;
+    gap: 20px; 
+    padding: 20px;
 }
-.frame-video{
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 400px;
+    width: 100%;
+    min-height: 10px;
+    transition: transform 0.3s ease-in-out;
+    text-align: left;
+}
+
+.card img {
     width: 200px;
+    height: auto;
+    display: block;
 }
 
-.video__frame-container{
-    width: 100px;
-    height: 500px;
-    margin: 10px;
-    transition: width 0.5s ease-in-out;
+.card_specification {
+    padding: 15px;
+    background-color: #fffefe;
 }
 
-.frame-video:hover{
-    width:300px;
+.card_specification p {
+    margin: 10px 0;
+    color: #333333;
+    font-size: 16px;
 }
+
+.card_specification span {
+    font-weight: bold;
+    color: #556B2F;
+}
+
+.card_specification a {
+    color: #7c481f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.card_specification a:hover {
+    color: #ff6347;
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
 
  /*FOOTER*/
  footer{
