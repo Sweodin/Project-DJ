@@ -344,6 +344,7 @@ header{
 .gallery__info-text{
     max-width: 1200px;
     width: 100%;
+    min-height: 300px;
     margin: auto;
     position:relative;
 }
@@ -354,6 +355,34 @@ header{
     width: 700px;
 }
 
+/*Video Gallery*/
+.video__gallery-container{
+    max-width: 1200px;
+    width: 100%;
+    min-height: 700px;
+    margin: auto;
+}
+
+.video__gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.frame-video{
+    width: 200px;
+}
+
+.video__frame-container{
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+.frame-video:hover{
+    width:300px;
+}
 
  /*FOOTER*/
  footer{
