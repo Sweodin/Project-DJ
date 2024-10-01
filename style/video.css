@@ -151,6 +151,10 @@ a,
     margin-left:2rem;
  }
 
+ .mt30{
+    margin-top: 30px;
+ }
+
  .pointer{
     cursor:pointer;
  }
@@ -291,7 +295,7 @@ header{
  }
 
 .join{
-    background-color: inherit;
+    background-color: rgba(0, 0, 0, 0.5);
     border: 1px solid #d8f2b8;
     color: #d8f2b8;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -344,6 +348,7 @@ header{
 .gallery__info-text{
     max-width: 1200px;
     width: 100%;
+    min-height: 300px;
     margin: auto;
     position:relative;
 }
@@ -354,6 +359,87 @@ header{
     width: 700px;
 }
 
+/*Video Gallery*/
+
+.video__gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    width: 100%;
+    min-height: 800px;
+    margin: auto;
+    margin-bottom: 90px;
+    gap: 20px; 
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 250px;
+    width: 100%;
+    min-height: 10px;
+    transition: transform 0.3s ease-in-out;
+    text-align: left;
+}
+
+.card img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.card_specification {
+    padding: 10px;
+    background-color: #fffefe;
+}
+
+.card_specification p {
+    margin: 10px 0;
+    color: #333333;
+    font-size: 16px;
+}
+
+.card_specification span {
+    font-weight: bold;
+    color: #556B2F;
+}
+
+.card_specification a {
+    color: #7c481f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.card_specification a:hover {
+    color: #ff6347;
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/*BANNER*/
+.banner{
+    width: 100%;
+    height: auto;
+    background: url(../image/gallery-image/video-gallery/banner-bg.jpg) no-repeat center center/cover;
+}
+
+.banner__container{
+    max-width: 1200px;
+    width: 100%;
+    min-height: 500px;
+    gap: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
 
  /*FOOTER*/
  footer{
