@@ -151,6 +151,10 @@ a,
     margin-left:2rem;
  }
 
+ .mt30{
+    margin-top: 30px;
+ }
+
  .pointer{
     cursor:pointer;
  }
@@ -291,7 +295,7 @@ header{
  }
 
 .join{
-    background-color: inherit;
+    background-color: rgba(0, 0, 0, 0.5);
     border: 1px solid #d8f2b8;
     color: #d8f2b8;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -366,6 +370,7 @@ header{
     width: 100%;
     min-height: 800px;
     margin: auto;
+    margin-bottom: 90px;
     gap: 20px; 
     padding: 20px;
 }
@@ -374,7 +379,7 @@ header{
     background-color: #ffffff;
     border-radius: 10px;
     overflow: hidden;
-    max-width: 400px;
+    max-width: 250px;
     width: 100%;
     min-height: 10px;
     transition: transform 0.3s ease-in-out;
@@ -388,7 +393,7 @@ header{
 }
 
 .card_specification {
-    padding: 15px;
+    padding: 10px;
     background-color: #fffefe;
 }
 
@@ -420,6 +425,21 @@ header{
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+/*BANNER*/
+.banner{
+    width: 100%;
+    height: auto;
+    background: url(../image/gallery-image/video-gallery/banner-bg.jpg) no-repeat center center/cover;
+}
+
+.banner__container{
+    max-width: 1200px;
+    width: 100%;
+    min-height: 500px;
+    gap: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
 
  /*FOOTER*/
  footer{
